@@ -1,0 +1,20 @@
+[
+    {
+        "id": 1,
+        "name": "Rajesh kumar",
+        "age":"20",
+        "mobileNo":"9488963979"
+    },
+    {
+        "id": 2,
+        "name": "Raja",
+        "age":"25",
+        "mobileNo":"9940709101"
+    },
+    {
+        "id": 3,
+        "name": "Pushpam",
+        "age":"50",
+        "mobileNo":"7667321282"
+    }
+]
