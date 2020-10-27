@@ -1,4 +1,4 @@
-// Use library3.js file
+// Use library2.js file
 const http = new library();
 
 // http.get('https://jsonplaceholder.typicode.com/users')
@@ -16,12 +16,17 @@ const user = {
 //     .then(data => console.log(data))
 //     .catch(err => console.log(err))
 
-// http.put('https://jsonplaceholder.typicode.com/users/1',user)
+// http.put('https://jsonplaceholder.typicode.com/users',user)
 //     .then(data => console.log(data))
 //     .catch(err => console.log(err))
 
 http.delete('https://jsonplaceholder.typicode.com/users/1')
     .then(data => console.log(data))
+    .then(()=>{
+        http.get('https://jsonplaceholder.typicode.com/users')
+            .then(data => console.log(data))
+            .catch(err => console.log(err));
+    })
     .catch(err => console.log(err))
 
 // http.get('https://jsonplaceholder.typicode.com/users')
